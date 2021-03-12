@@ -1,0 +1,458 @@
+/**
+ * @name BasicBackground
+ * @description Allows you to use a background image in Discord without greatly altering the basic layout of Discord
+ * @author DevilBro
+ * @version 1.0.5
+ * @authorId 278543574059057154
+ * @invite Jx3TjNS
+ * @donate https://www.paypal.me/MircoWittrien
+ * @patreon https://www.patreon.com/MircoWittrien
+ * @website https://github.com/mwittrien/BetterDiscordAddons/tree/master/Themes/BasicBackground
+ * @source https://raw.githubusercontent.com/mwittrien/BetterDiscordAddons/master/Themes/BasicBackground/BasicBackground.theme.css
+ * @updateUrl https://raw.githubusercontent.com/mwittrien/BetterDiscordAddons/master/Themes/BasicBackground/BasicBackground.theme.css
+ */
+
+/* To change stuff like the colors, transparency and background image, change the variables inside the root {}, do NOT change the @import url() */
+
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/BasicBackground/BasicBackground.css);
+
+:root {
+	--transparencycolor:			0,0,0;						/* default:	0,0,0																								*/
+	--transparencyalpha:			0.0;						/* default: 0.15				(general darkness of the app)													*/
+	--messagetransparency:			0.1;						/* default: 0.5					(additional shadows behind messages, set to 0 to remove boxes)					*/
+	--guildchanneltransparency:		0.3;						/* default: 0.15				(additional darkness for guild/channel list)									*/
+	--memberlisttransparency:		0.3;						/* default: 0.0					(additional darkness for member list)											*/
+	--accentcolor:					100, 100, 100,.6;					/* default: 190,78,180			(RGB-format - blurple: 114,137,218 bd-blue: 58,113,193)							*/
+	
+	--font:							Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;		/* font used in most places														*/
+	--textshadow:					249,255,137,1;				/* default: transparent			(textshadow for text ontop of accentcolor nodes, ONLY accepts a color, no px)	*/
+	--settingsicons:				1;							/* Use Settings Icons in User/Server/Channel Settings: 1 = yes, 0 = no											*/
+	
+	--background:					url(https://preview.redd.it/m6ptifyhde321.gif?s=fdd9acb1b7d2933df3ef999dd7f984e3f6850822);	/* general background image				*/
+	--backgroundposition:			center;						/* default: center				(position of background - values: [center/top/right/bottom/left])				*/
+	--backgroundsize:				cover;						/* default: cover				(sizefit of background - values: [cover/contain/auto])							*/
+	--backgroundblur:				unset;						/* default: unset				(blur in px, only works when --background is set to an image)					*/
+	
+	--popout:						var(--background);			/* default: var(--background)	(change to use another background/color for modals/popouts)						*/
+	--popoutposition:				var(--backgroundposition);	/* default: center				(position of popout - values: [center/top/right/bottom/left])					*/
+	--popoutsize:					var(--backgroundsize);		/* default: cover				(sizefit of popout - values: [cover/contain/auto])								*/
+	--popoutblur:					var(--backgroundblur);		/* default: unset				(blur in px, only works when --popout is set to an image)						*/
+	
+	--backdrop:						rgba(0, 0, 0, .1);			/* default: rgba(0,0,0,0.85)	(change to use another background/color for backdrops)							*/
+	--backdropposition:				var(--backgroundposition);	/* default: center				(position of backdrop - values: [center/top/right/bottom/left])					*/
+	--backdropsize:					var(--backgroundsize);		/* default: cover				(sizefit of backdrop - values: [cover/contain/auto])							*/
+	--backdropblur:					var(--backgroundblur);		/* default: unset				(blur in px, only works when --backdrop is set to an image)						*/
+	--fontwhite1: 255,255,255;
+	--fontwhite2: 255,255,255;
+	--fontwhite3: 200,200,200;
+	--fontwhite4: 200,200,200;
+	
+	--version1_0_5:					none;						/* DO NOT CHANGE THIS VARIABLE , USED TO HIDE UPDATE NOTICE														*/
+}
+.background-ujHpbY {
+	background-color: rgb(20, 20, 20,.4) !important;
+	border: 1rem solid rgb(10, 10, 10, 1) !important;
+	border-radius: 0 !important;
+  }
+  .theme-dark .typing-2GQL18,
+  .theme-dark .layer-3QrUeG,
+  .theme-dark .messagesWrapper-3lZDfY,
+  .messages-3amgkR,
+  .container-3w7J-x,
+  .sidebar-2K8pFh,
+  .theme-dark .wrapper-1Rf91z,
+  .theme-dark .scroller-2TZvBN,
+  .container-2lgZY8,
+  .theme-dark .chat-3bRxxu, 
+  .theme-dark .chat-3bRxxu form, 
+  .theme-dark .content-yTz4x3,
+  .theme-dark .contentRegion-3nDuYy,
+  .contentRegionScroller-26nc1e,
+  .theme-dark .sidebarRegion-VFTUkN,
+  .sidebarRegionScroller-3MXcoP,
+  .theme-dark .standardSidebarView-3F1I7i,
+  .theme-dark .container-1D34oG,
+  .scroller-1IIF0A,
+  .applicationStore-1pNvnv,
+  .scroller-9moviB,
+  .scroller-305q3I {
+	background-color: transparent;
+  }
+  .lookFilled-1Gx00P.colorBrand-3pXr91,
+.lookFilled-1Gx00P.colorBrand-3pXr91:disabled {
+	background-color: transparent;
+	border: 1px solid rgb(255, 9, 9);
+}
+.lookFilled-1Gx00P.colorBrand-3pXr91:hover {
+  color: #fff;
+  background-color: #c52f55;
+}
+.lookOutlined-3sRXeN.colorBrand-3pXr91 {
+  color: white;
+  border-color: #c52f55;
+}
+.lookOutlined-3sRXeN.colorBrand-3pXr91:hover {
+ 	background-color: transparent;
+	border: 1px solid rgb(255, 9, 9);
+}
+.bd-toast.toast-success {
+	background-color: transparent;
+	border: 1px solid rgb(255, 9, 9);
+}
+.theme-dark .header-2RyJ0Y {
+	color: rgb(255, 0, 0);
+}
+.container-3auIfb[style*="background-color: rgb(67, 181, 129);"] {
+		background-color: transparent;
+	border: 1px solid rgb(255, 9, 9);
+}
+.container-3auIfb[style*="background-color: rgb(67, 181, 129);"] rect {
+	background-color: transparent;
+	border: 1px solid rgb(255, 9, 9);
+}
+.theme-dark .accountBtnInner-sj5jLs:hover {
+	background-color: #ff0000;
+  }
+.grabber-3mFHz2 {
+	width: 15px;
+	height: 29px;
+	margin-left: -8px;
+	top: 50%;
+	margin-top: -21px;
+	border-radius: 12px;
+	background-color: rgb(0, 0, 0,.5);
+	border: 2px solid rgb(255, 9, 9);
+	box-shadow: none;
+  }
+  .theme-dark .button-2CgfFz {
+	background-color: rgba(0,0,0,0.4) !important;
+	box-shadow: none !important;
+  }
+.guildNick-3uAm3i, 
+.listName-3w10cx,
+.userInfoSectionHeader-CBvMDh {
+	background-color: transparent;
+	border: 1px solid rgb(255, 9, 9);
+}
+.navButtonActive-1MkytQ {
+background-color: transparent;
+border: 1px solid rgb(255, 9, 9);
+}
+
+.navButtonActive-1MkytQ:hover {
+background-color: transparent;
+border: 1px solid rgb(255, 9, 9);
+}
+.navButtonActive-1MkytQ.active {
+background-color: transparent;
+border: 1px solid rgb(255, 9, 9);
+}
+#app-mount .selectorButtonSelected-t5V9On {
+background-color: transparent;
+border: 1px solid rgb(255, 9, 9);
+}
+
+.selectorButton-EEUWed:not(.selectorButtonPremiumRequired-mKMbIu):hover {
+background-color: transparent;
+border: 1px solid rgb(255, 9, 9);
+}
+
+.option-3KoAJB.focused-1T6PE5  {
+background-color: transparent;
+border: 1px solid rgb(255, 9, 9);
+}
+
+.button-F9qN4n {
+background-color: transparent;
+border: 1px solid rgb(255, 9, 9);
+}
+
+.button-F9qN4n:hover, .keyboard-mode .button-F9qN4n.focused-3ZzkKr {
+background-color: transparent;
+border: 1px solid rgb(255, 9, 9);
+}
+
+.theme-dark .activeButton-rvKcqq, .theme-dark .activeButton-rvKcqq:hover {
+background-color: transparent;
+border: 1px solid rgb(255, 9, 9);
+}
+
+.pageButton-2ruNwd {
+background-color: transparent;
+border: 1px solid rgb(255, 9, 9);
+}
+
+.pageButton-2ruNwd:hover {
+background-color: transparent;
+border: 1px solid rgb(255, 9, 9);
+}
+.theme-dark .closeButton-1tv5uR {
+background-color: transparent;
+border: 1px solid rgb(255, 9, 9);
+}
+.pageButton-2ruNwd {
+background-color: transparent;
+border: 1px solid rgb(255, 9, 9);
+}
+
+.pageButton-2ruNwd:hover {
+background-color: transparent;
+border: 1px solid rgb(255, 9, 9);
+}
+.theme-dark .closeButton-1tv5uR {
+background-color: transparent;
+border: 1px solid rgb(255, 9, 9);
+}
+.closeButton-1tv5uR {
+background-color: transparent;
+border: 1px solid rgb(255, 9, 9);
+}
+.theme-dark .closeButton-1tv5uR:hover {
+background-color: transparent;
+border: 1px solid rgb(255, 9, 9);
+}
+.bd-switch-checked {
+background-color: transparent;
+border: 1px solid rgb(255, 9, 9);
+}
+.bd-switch {
+background-color: transparent;
+border: 1px solid rgb(255, 9, 9);
+}
+.bd-switch {
+border: 1px solid rgb(255, 9, 9);
+}
+.bd-switch::after {
+border: 1px solid rgb(255, 9, 9);
+}
+.container-3auIfb[style*="background-color: rgb(67, 181, 129);"] {
+background-color: transparent;
+border: 1px solid rgb(255, 9, 9);
+}
+.container-3auIfb[style*="background-color: rgb(67, 181, 129);"] rect {
+background-color: transparent;
+border: 1px solid rgb(255, 9, 9);
+}
+.container-3auIfb[style*="background-color: rgb(67, 181, 129);"] path {
+background-color: transparent;
+border: 1px solid rgb(255, 9, 9);
+}
+.theme-dark .accountBtnInner-sj5jLs:hover {
+background-color: transparent;
+border: 1px solid rgb(255, 9, 9);
+}
+.theme-dark .button-2CgfFz {
+background-color: transparent;
+border: 1px solid rgb(255, 9, 9);
+}
+.theme-dark .button-2CgfFz {
+background-color: transparent;
+border: 1px solid rgb(255, 9, 9);
+}
+.bda-slist .bda-footer button {
+background-color: transparent;
+border: 1px solid rgb(255, 9, 9);
+}
+.standardSidebarView-3F1I7i #bd-customcss-attach-controls button, 
+.bd-detached-css-editor #bd-customcss-attach-controls button {
+background-color: transparent;
+border: 1px solid rgb(255, 9, 9);
+border-left: none !important;
+border-right: none !important;
+border-radius: 14px;
+margin-right: 12px;
+}
+.circleIconButton-jET_ig {
+  background-color: black;
+  color: rgb(255, 9, 9);
+}
+.circleIconButton-jET_ig:hover {
+background-color: rgb(255, 9, 9);
+color: rgb(255, 255, 255);
+}
+.buttonInvertedPurple-WtBglX {
+background-color: transparent;
+border: 1px solid rgb(255, 9, 9);
+}
+.buttonInvertedPurple-WtBglX:hover {
+background-color: transparent;
+border: 1px solid rgb(255, 9, 9);
+}
+.addButtonIcon-1NMJ8u {
+	background-color: transparent;
+	border: 1px solid rgb(255, 9, 9);
+}
+.theme-dark .jumpToPresentBar-G1R9s6,
+.theme-dark .newMessagesBar-265mhP button,
+.container-2fRDfG {
+background-color: transparent;
+border: 1px solid rgb(255, 9, 9);
+}
+.hasMore-3e72_v,
+.theme-dark .hasMoreButton-1MELpI  {
+	background-color: transparent;
+	border: 1px solid rgb(255, 9, 9);
+}
+.regionSelect-3lf4eE .regionSelectInner-24f4Ce,
+.regionSelect-3lf4eE button {
+	background-color: transparent;
+	border: 1px solid rgb(255, 9, 9);
+}
+.regionSelect-3lf4eE button {
+	background-color: transparent;
+	border: 1px solid rgb(255, 9, 9);
+}
+.theme-dark .regionSelect-3lf4eE:hover button {
+	background-color: transparent;
+	border: 1px solid rgb(255, 9, 9);
+}
+.theme-dark .actionButton-2PeQbJ {
+	background-color: transparent;
+	border: 1px solid rgb(255, 9, 9);
+  }
+  .theme-dark .create-3jownz:hover .actionButton-2PeQbJ {
+	background-color: transparent;
+	border: 1px solid rgb(255, 9, 9);
+  }
+  .actionButton-2PeQbJ {
+	background-color: transparent;
+	border: 1px solid rgb(255, 9, 9);
+  }
+  .regionSelect-3lf4eE button {
+	background-color: transparent;
+	border: 1px solid rgb(255, 9, 9);
+}
+.regionSelect-3lf4eE button {
+	background-color: transparent;
+	border: 1px solid rgb(255, 9, 9);
+}
+.theme-dark .regionSelect-3lf4eE:hover button {
+	background-color: transparent;
+	border: 1px solid rgb(255, 9, 9);
+}
+.action-1lSjCi {
+  border-radius: 10px;
+}
+.theme-dark .header-3ZP1MY,
+.theme-dark .create-3jownz .actionHeader-2CT5c7,
+.theme-dark .join-33Tr-7 .actionHeader-2CT5c7,
+.theme-dark .actionBody-1qj65C,
+.theme-dark .description-Bw8krY {
+  color: white;
+}
+.theme-dark .actionButton-2PeQbJ {
+	background-color: transparent;
+	border: 1px solid rgb(255, 9, 9);
+}
+.theme-dark .create-3jownz:hover .actionButton-2PeQbJ {
+	background-color: transparent;
+	border: 1px solid rgb(255, 9, 9);
+}
+.actionButton-2PeQbJ {
+	background-color: transparent;
+	border: 1px solid rgb(255, 9, 9);
+}
+
+
+.theme-dark .title-2CFvp_,
+.theme-dark .sampleLink-KPFu3I {
+    background-color: transparent;
+	border: 1px solid rgb(255, 9, 9);
+}
+.theme-dark .join-33Tr-7:hover .actionButton-2PeQbJ {
+	background-color: transparent;
+	border: 1px solid rgb(255, 9, 9);
+}
+.theme-dark .join-33Tr-7 .actionButton-2PeQbJ {
+	background-color: transparent;
+	border: 1px solid rgb(255, 9, 9);
+}
+.bda-dark .theme-dark .join-33Tr-7 {
+	background-color: transparent;
+	border: 1px solid rgb(255, 9, 9);
+}
+.theme-dark .jumpButton-3DTcS_,
+.theme-dark .button-11zvza,
+.theme-dark .collapseButton-oSNpPX,
+.jumpButton-2dvRSC {
+	background-color: transparent;
+	border: 1px solid rgb(255, 9, 9);
+}
+.theme-dark .messageGroupWrapper-o-Zw7G:hover .actionButtons-1sUUug {
+box-shadow: none;
+background: none;
+}
+.theme-dark .actionButton-uPB8Fs,
+.actionButton-uPB8Fs.highlight-Lf97TE {
+background-color: transparent;
+border: 1px solid rgb(255, 9, 9);
+}
+.theme-dark .actionButton-uPB8Fs:hover {
+background-color: transparent;
+border: 1px solid rgb(255, 9, 9);
+}
+.actionButton-uPB8Fs.actionDeny-de_uKj:hover {
+background-color: transparent;
+border: 1px solid rgb(255, 9, 9);
+}
+.controlButton-2MhVEL.leaveButton-2YnTyt {
+background-color: transparent;
+border: 1px solid rgb(255, 9, 9);
+}
+
+.centerButton-3CaNcJ {
+background-color: transparent;
+border: 1px solid rgb(255, 9, 9);
+}
+
+.centerButton-3CaNcJ:hover {
+background-color: transparent;
+border: 1px solid rgb(255, 9, 9);
+}
+.standardSidebarView-3F1I7i a,
+.imageDetails-1t6Zms a,
+.theme-dark .card-3Qj_Yx a,
+.bda-slist .bda-footer a,
+.content-8biNdB a,
+.footer-3rDWdC a,
+.lookLink-9FtZy-.colorLink-35jkBc,
+.theme-dark .markup-2BOw-j a,
+.quickswitcher-3JagVE a,
+.theme-dark .topic-TCb_qw a,
+.filenameLinkWrapper-1-14c5 a,
+.operations-36ENbA>a,
+.theme-dark .welcomeMessage-ULm0mo a,
+.localBotMessage-1cGMdw a,
+.theme-dark .container-3-pyIM .content-2M3n_H a,
+.helpText-h3r3wC a,
+.lookLink-9FtZy-.colorBrand-3pXr91,
+.emptyStateSubtext-2njjqg a,
+.theme-dark .container-2x5lvQ section a,
+.colorStandard-2KCXvj a,
+.editChannelButton-1dYN-G,
+.button-18p_f6,
+.footerText-2a7NxZ a {
+color: rgb(199, 199, 199);
+}
+.standardSidebarView-3F1I7i #editor-detached button {
+background-color: transparent;
+border: 1px solid rgb(255, 9, 9);
+}
+.navButtonActive-1MkytQ {
+background-color: transparent;
+border: 1px solid rgb(255, 9, 9);
+}
+
+.navButtonActive-1MkytQ:hover {
+background-color: transparent;
+border: 1px solid rgb(255, 9, 9);
+}
+.icon-KgGMGo,
+.button-1ZiXG9 {
+	background-color: transparent;
+	border: 1px solid rgb(255, 9, 9);
+}
+.button-1ZiXG9:hover {
+	background-color: transparent;
+	border: 1px solid rgb(255, 9, 9);
+}
